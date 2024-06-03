@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button (click)="goToHome()">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+      Volver
+    </ion-button>    
+    <ion-title>Planner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Gacha Planner</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<ion-list>
+  <ion-item-group>
+    <ion-item-divider>
+    <ion-avatar>
+      <ion-img src="https://staticg.sportskeeda.com/editor/2024/05/98e29-17162201018275-1920.jpg"></ion-img>
+    </ion-avatar>
+      <ion-label> Pulls </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Promocional Peronajes</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Promocional Armas</ion-label>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
+
+<ion-list>
+  <ion-item-group>
+    <ion-item-divider>
+    <ion-avatar>
+      <ion-img src="assets/img/WavePlates.png"></ion-img>
+    </ion-avatar>
+      <ion-label> WavePlates </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Personajes</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Armas</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Echos</ion-label>
+    </ion-item>
+  </ion-item-group>
+</ion-list>

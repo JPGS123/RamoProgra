@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToHome()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="register-container">
+    <form (submit)="onRegister($event)">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" id="registerUsername" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email address</ion-label>
+        <ion-input type="email" id="registerEmail" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" id="registerPassword" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password" id="confirmPassword" required></ion-input>
+      </ion-item>
+      
+      <ion-button type="submit" expand="full" class="ion-margin-top">Register</ion-button>
+    </form>
+  </div>
+</ion-content>
+
